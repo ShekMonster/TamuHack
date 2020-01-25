@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45729A6CBE9660CB1375C134 /* Pods_TamuHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F51BD0E7B831F67A3B7FCA5 /* Pods_TamuHack.framework */; };
+		46D30AD023DCA23000484944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D30ACF23DCA23000484944 /* AppDelegate.swift */; };
+		46D30AD223DCA23000484944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D30AD123DCA23000484944 /* SceneDelegate.swift */; };
+		46D30AD423DCA23000484944 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D30AD323DCA23000484944 /* SignInVC.swift */; };
+		46D30AD723DCA23000484944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D30AD523DCA23000484944 /* Main.storyboard */; };
+		46D30ADA23DCA23000484944 /* TamuHack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46D30AD823DCA23000484944 /* TamuHack.xcdatamodeld */; };
+		46D30ADC23DCA23000484944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D30ADB23DCA23000484944 /* Assets.xcassets */; };
+		46D30ADF23DCA23000484944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D30ADD23DCA23000484944 /* LaunchScreen.storyboard */; };
+		46D30AE723DCAE4500484944 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46D30AE623DCAE4500484944 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F51BD0E7B831F67A3B7FCA5 /* Pods_TamuHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TamuHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D30ACC23DCA23000484944 /* TamuHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamuHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D30ACF23DCA23000484944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46D30AD123DCA23000484944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46D30AD323DCA23000484944 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		46D30AD623DCA23000484944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D30AD923DCA23000484944 /* TamuHack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TamuHack.xcdatamodel; sourceTree = "<group>"; };
+		46D30ADB23DCA23000484944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D30ADE23DCA23000484944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46D30AE023DCA23000484944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D30AE623DCAE4500484944 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		921C9EADD89E9D9FBF6A4265 /* Pods-TamuHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TamuHack.debug.xcconfig"; path = "Target Support Files/Pods-TamuHack/Pods-TamuHack.debug.xcconfig"; sourceTree = "<group>"; };
+		EFCFC6027ABD5A6467B4C82D /* Pods-TamuHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TamuHack.release.xcconfig"; path = "Target Support Files/Pods-TamuHack/Pods-TamuHack.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46D30AC923DCA23000484944 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45729A6CBE9660CB1375C134 /* Pods_TamuHack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25D365D8AC2C4C24A4F1EF53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				921C9EADD89E9D9FBF6A4265 /* Pods-TamuHack.debug.xcconfig */,
+				EFCFC6027ABD5A6467B4C82D /* Pods-TamuHack.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		46D30AC323DCA23000484944 = {
+			isa = PBXGroup;
+			children = (
+				46D30ACE23DCA23000484944 /* TamuHack */,
+				46D30ACD23DCA23000484944 /* Products */,
+				25D365D8AC2C4C24A4F1EF53 /* Pods */,
+				50D46126C9227B78BFE5791E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46D30ACD23DCA23000484944 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D30ACC23DCA23000484944 /* TamuHack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46D30ACE23DCA23000484944 /* TamuHack */ = {
+			isa = PBXGroup;
+			children = (
+				46D30ACF23DCA23000484944 /* AppDelegate.swift */,
+				46D30AD123DCA23000484944 /* SceneDelegate.swift */,
+				46D30AD323DCA23000484944 /* SignInVC.swift */,
+				46D30AD523DCA23000484944 /* Main.storyboard */,
+				46D30ADB23DCA23000484944 /* Assets.xcassets */,
+				46D30ADD23DCA23000484944 /* LaunchScreen.storyboard */,
+				46D30AE023DCA23000484944 /* Info.plist */,
+				46D30AD823DCA23000484944 /* TamuHack.xcdatamodeld */,
+				46D30AE623DCAE4500484944 /* GoogleService-Info.plist */,
+			);
+			path = TamuHack;
+			sourceTree = "<group>";
+		};
+		50D46126C9227B78BFE5791E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F51BD0E7B831F67A3B7FCA5 /* Pods_TamuHack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46D30ACB23DCA23000484944 /* TamuHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D30AE323DCA23000484944 /* Build configuration list for PBXNativeTarget "TamuHack" */;
+			buildPhases = (
+				80D316C60BB4EA01E562EA37 /* [CP] Check Pods Manifest.lock */,
+				46D30AC823DCA23000484944 /* Sources */,
+				46D30AC923DCA23000484944 /* Frameworks */,
+				46D30ACA23DCA23000484944 /* Resources */,
+				45D83E389DFC035D51C1B916 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TamuHack;
+			productName = TamuHack;
+			productReference = 46D30ACC23DCA23000484944 /* TamuHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46D30AC423DCA23000484944 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Abhishek More";
+				TargetAttributes = {
+					46D30ACB23DCA23000484944 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 46D30AC723DCA23000484944 /* Build configuration list for PBXProject "TamuHack" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46D30AC323DCA23000484944;
+			productRefGroup = 46D30ACD23DCA23000484944 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46D30ACB23DCA23000484944 /* TamuHack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46D30ACA23DCA23000484944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D30ADF23DCA23000484944 /* LaunchScreen.storyboard in Resources */,
+				46D30ADC23DCA23000484944 /* Assets.xcassets in Resources */,
+				46D30AD723DCA23000484944 /* Main.storyboard in Resources */,
+				46D30AE723DCAE4500484944 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45D83E389DFC035D51C1B916 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TamuHack/Pods-TamuHack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TamuHack/Pods-TamuHack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TamuHack/Pods-TamuHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D316C60BB4EA01E562EA37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TamuHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46D30AC823DCA23000484944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D30AD423DCA23000484944 /* SignInVC.swift in Sources */,
+				46D30AD023DCA23000484944 /* AppDelegate.swift in Sources */,
+				46D30AD223DCA23000484944 /* SceneDelegate.swift in Sources */,
+				46D30ADA23DCA23000484944 /* TamuHack.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46D30AD523DCA23000484944 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D30AD623DCA23000484944 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46D30ADD23DCA23000484944 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D30ADE23DCA23000484944 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46D30AE123DCA23000484944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46D30AE223DCA23000484944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46D30AE423DCA23000484944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921C9EADD89E9D9FBF6A4265 /* Pods-TamuHack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V79782M5XQ;
+				INFOPLIST_FILE = TamuHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = playground.TamuHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		46D30AE523DCA23000484944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFCFC6027ABD5A6467B4C82D /* Pods-TamuHack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V79782M5XQ;
+				INFOPLIST_FILE = TamuHack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = playground.TamuHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46D30AC723DCA23000484944 /* Build configuration list for PBXProject "TamuHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D30AE123DCA23000484944 /* Debug */,
+				46D30AE223DCA23000484944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D30AE323DCA23000484944 /* Build configuration list for PBXNativeTarget "TamuHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D30AE423DCA23000484944 /* Debug */,
+				46D30AE523DCA23000484944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46D30AD823DCA23000484944 /* TamuHack.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46D30AD923DCA23000484944 /* TamuHack.xcdatamodel */,
+			);
+			currentVersion = 46D30AD923DCA23000484944 /* TamuHack.xcdatamodel */;
+			path = TamuHack.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46D30AC423DCA23000484944 /* Project object */;
+}

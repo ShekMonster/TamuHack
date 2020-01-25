@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>749038441534-00haf3oq9ip46rdqvgqd2bn0e9lmanu2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.749038441534-00haf3oq9ip46rdqvgqd2bn0e9lmanu2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCqgdAll4NkClscJxcTVInDwmbbQoYsajM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>749038441534</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>playground.TamuHack</string>
+	<key>PROJECT_ID</key>
+	<string>tamuhack-f9ca8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tamuhack-f9ca8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:749038441534:ios:784a2f8d05b00453386d6f</string>
+	<key>DATABASE_URL</key>
+	<string>https://tamuhack-f9ca8.firebaseio.com</string>
+</dict>
+</plist>
