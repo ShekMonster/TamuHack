@@ -9,18 +9,87 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet var inText: UILabel!
+    @IBOutlet var upText: UILabel!
+    @IBOutlet var signInSwitchLabel: UIButton!
+    @IBOutlet var signUpSwitchLabel: UIButton!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var email: UITextField!
+    @IBOutlet var signInButton: UIButton!
+    @IBOutlet var arrow: UIImageView!
+    
+    var up = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        logInUser(email: "user@gmail.com", password: "password")
+        
+        upText.alpha = 0
+        
     }
     
+    @IBAction func signInPressed(_ sender: Any) {
+        
+        if let email = email.text {
+            if let password = password.text {
+                if validText() {
+                    if up {
+                        createUser(email: email, password: password)
+                    } else {
+                        logInUser(email: email, password: password)
+                    }
+                }
+            }
+        }   
+    }
+    @IBAction func signUpSwitchPressed(_ sender: Any) {
+        
+        up = true
+        
+        UIView.animate(withDuration: 0.25){
+            
+            let angle = Double.pi / -2
+            
+            self.arrow.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            self.signUpSwitchLabel.center.x -= 375
+            self.signInSwitchLabel.center.x -= 375
+            self.signUpSwitchLabel.alpha = 0
+            self.signInSwitchLabel.alpha = 1
+            self.inText.center.y -= 42
+            self.upText.center.y -= 42
+            self.inText.alpha = 0
+            self.upText.alpha = 1
+        }
+    }
+    
+    @IBAction func signInSwitchPressed(_ sender: Any) {
+        
+        up = false
+        
+        UIView.animate(withDuration: 0.25){
+            
+            let angle = 0
+            
+            self.arrow.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
+            self.signUpSwitchLabel.center.x += 375
+            self.signInSwitchLabel.center.x += 375
+            self.signUpSwitchLabel.alpha = 1
+            self.signInSwitchLabel.alpha = 0
+            self.inText.center.y += 42
+            self.upText.center.y += 42
+            self.inText.alpha = 1
+            self.upText.alpha = 0
+        }
+        
+        
+    }
     func logInUser(email: String, password: String) {
         
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
             if user != nil && error == nil {
                 print("Signed in successfully!")
+                self!.performSegue(withIdentifier: "signInSegue", sender: self)
             } else {
                 print("Sign in failed!")
             }
@@ -50,7 +119,36 @@ class ViewController: UIViewController {
         }
           
     }
-
-
+    
+    func validText() -> Bool {
+        if(email.text! != "" && password.text! != "") {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        UIView.animate(withDuration: 0.3) {
+            
+            self.view.center.y -= 250
+            
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        UIView.animate(withDuration: 0.3) {
+            
+            self.view.center.y += 250
+            
+        }
+    }
+    
 }
 

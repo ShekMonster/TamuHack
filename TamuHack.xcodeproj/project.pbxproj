@@ -16,6 +16,7 @@
 		46D30ADC23DCA23000484944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D30ADB23DCA23000484944 /* Assets.xcassets */; };
 		46D30ADF23DCA23000484944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D30ADD23DCA23000484944 /* LaunchScreen.storyboard */; };
 		46D30AE723DCAE4500484944 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46D30AE623DCAE4500484944 /* GoogleService-Info.plist */; };
+		46D30AE923DCDEE100484944 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D30AE823DCDEE100484944 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		46D30ADE23DCA23000484944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46D30AE023DCA23000484944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D30AE623DCAE4500484944 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46D30AE823DCDEE100484944 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		921C9EADD89E9D9FBF6A4265 /* Pods-TamuHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TamuHack.debug.xcconfig"; path = "Target Support Files/Pods-TamuHack/Pods-TamuHack.debug.xcconfig"; sourceTree = "<group>"; };
 		EFCFC6027ABD5A6467B4C82D /* Pods-TamuHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TamuHack.release.xcconfig"; path = "Target Support Files/Pods-TamuHack/Pods-TamuHack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				46D30ACF23DCA23000484944 /* AppDelegate.swift */,
 				46D30AD123DCA23000484944 /* SceneDelegate.swift */,
 				46D30AD323DCA23000484944 /* SignInVC.swift */,
+				46D30AE823DCDEE100484944 /* HomeVC.swift */,
 				46D30AD523DCA23000484944 /* Main.storyboard */,
 				46D30ADB23DCA23000484944 /* Assets.xcassets */,
 				46D30ADD23DCA23000484944 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46D30AD423DCA23000484944 /* SignInVC.swift in Sources */,
+				46D30AE923DCDEE100484944 /* HomeVC.swift in Sources */,
 				46D30AD023DCA23000484944 /* AppDelegate.swift in Sources */,
 				46D30AD223DCA23000484944 /* SceneDelegate.swift in Sources */,
 				46D30ADA23DCA23000484944 /* TamuHack.xcdatamodeld in Sources */,
