@@ -9,21 +9,11 @@
 import Foundation
 import CoreLocation
 
-struct ShelterEntry {
+public struct ShelterEntry {
     var name: String
     var type: String
     var location: CLLocation
     var email: String
     var capacity: Int
     var id: String
-}
-
-protocol FireDBAccess {
-    init(user: String, pass: String)
-    
-    func pushShelter(entry: ShelterEntry)
-    func getShelters(limit: Int) -> [ShelterEntry]
-    func getUserEmail() -> String
-    
-    
 }

@@ -156,6 +156,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="okr-Ag-pnr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Zjy-G5-75s" id="jt3-S7-5ww"/>
+                                </connections>
                             </mapView>
                             <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="163-Iu-zsx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>

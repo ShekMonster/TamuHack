@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36CCA9E123DD68CF00019081 /* FirebaseAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CCA9E023DD68CF00019081 /* FirebaseAccess.swift */; };
 		45729A6CBE9660CB1375C134 /* Pods_TamuHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F51BD0E7B831F67A3B7FCA5 /* Pods_TamuHack.framework */; };
+		4640B5A423DD7FCB00608D9F /* DetailAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640B5A323DD7FCB00608D9F /* DetailAnnotation.swift */; };
 		46D30AD023DCA23000484944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D30ACF23DCA23000484944 /* AppDelegate.swift */; };
 		46D30AD223DCA23000484944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D30AD123DCA23000484944 /* SceneDelegate.swift */; };
 		46D30AD423DCA23000484944 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D30AD323DCA23000484944 /* SignInVC.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		0F51BD0E7B831F67A3B7FCA5 /* Pods_TamuHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TamuHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CCA9E023DD68CF00019081 /* FirebaseAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccess.swift; sourceTree = "<group>"; };
+		4640B5A323DD7FCB00608D9F /* DetailAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnnotation.swift; sourceTree = "<group>"; };
 		46D30ACC23DCA23000484944 /* TamuHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamuHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D30ACF23DCA23000484944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46D30AD123DCA23000484944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,9 +88,11 @@
 				46D30AD123DCA23000484944 /* SceneDelegate.swift */,
 				46D30AD323DCA23000484944 /* SignInVC.swift */,
 				46D30AE823DCDEE100484944 /* HomeVC.swift */,
+				4640B5A323DD7FCB00608D9F /* DetailAnnotation.swift */,
 				46D30AD523DCA23000484944 /* Main.storyboard */,
 				46D30ADB23DCA23000484944 /* Assets.xcassets */,
 				46D30AEA23DD19A500484944 /* ShelterEntry.swift */,
+				36CCA9E023DD68CF00019081 /* FirebaseAccess.swift */,
 				46D30ADD23DCA23000484944 /* LaunchScreen.storyboard */,
 				46D30AE023DCA23000484944 /* Info.plist */,
 				46D30AD823DCA23000484944 /* TamuHack.xcdatamodeld */,
@@ -219,12 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CCA9E123DD68CF00019081 /* FirebaseAccess.swift in Sources */,
 				46D30AD423DCA23000484944 /* SignInVC.swift in Sources */,
 				46D30AE923DCDEE100484944 /* HomeVC.swift in Sources */,
 				46D30AD023DCA23000484944 /* AppDelegate.swift in Sources */,
 				46D30AD223DCA23000484944 /* SceneDelegate.swift in Sources */,
 				46D30AEB23DD19A500484944 /* ShelterEntry.swift in Sources */,
 				46D30ADA23DCA23000484944 /* TamuHack.xcdatamodeld in Sources */,
+				4640B5A423DD7FCB00608D9F /* DetailAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
