@@ -14,6 +14,7 @@ import CoreLocation
 class HomeVC: UIViewController {
     
     
+    @IBOutlet var submitButton: UIButton!
     @IBOutlet var addResidenceLabel: UILabel!
     @IBOutlet var addLocationView: UIView!
     @IBOutlet var mapView: MKMapView!
@@ -25,6 +26,10 @@ class HomeVC: UIViewController {
     @IBOutlet var residenceName: UITextField!
     @IBOutlet var residenceType: UITextField!
     @IBOutlet var residenceCapacity: UITextField!
+    @IBOutlet var third: UIImageView!
+    @IBOutlet var second: UIImageView!
+    @IBOutlet var first: UIImageView!
+    @IBOutlet var fourth: UIImageView!
     
     var ref: DatabaseReference!
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -43,10 +48,15 @@ class HomeVC: UIViewController {
         getShelters()
         plusSignX = self.plusSign.center.x
         addLocationView.center.y += 600
+        addResidenceLabel.alpha = 0
+        bottomBarView.center.y += 200
+        UIView.animate(withDuration: 0.5) {
+            self.bottomBarView.center.y -= 200
+        }
 
         setLocation()
         centerMapOnLocation(location: userLocation!)
-        addResidenceLabel.alpha = 0
+
         
     }
 
@@ -103,6 +113,7 @@ class HomeVC: UIViewController {
                 if let capacity = Int(residenceCapacity.text!) {
                     if validText() {
                         newShelter(name: name, type: type, capacity: capacity, location: userLocation!)
+                        animateSubmit()
                     } else {
                         textErrorAlert()
                     }
@@ -186,6 +197,36 @@ class HomeVC: UIViewController {
             }
         })
 
+    }
+    
+    func animateSubmit() {
+        
+        UIView.animate(withDuration: 0.75){
+            self.first.center.y -= 300
+            self.residenceName.center.y -= 300
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            UIView.animate(withDuration: 0.75){
+                self.second.center.y -= 393
+                self.residenceType.center.y -= 393
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.50) {
+            UIView.animate(withDuration: 0.75){
+                self.third.center.y -= 486
+                self.residenceCapacity.center.y -= 486
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+            UIView.animate(withDuration: 0.75){
+                self.fourth.center.y -= 579
+                self.submitButton.center.y -= 579
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        
+        }
+        
     }
     
     override var prefersStatusBarHidden: Bool {

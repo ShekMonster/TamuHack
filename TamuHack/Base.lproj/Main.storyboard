@@ -151,7 +151,7 @@
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7N-kg-qA9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Residence" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNW-Vx-ebo">
@@ -180,28 +180,28 @@
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Capacity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xq2-jM-1kb">
                                         <rect key="frame" x="67" y="359" width="240" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="FgD-8h-OVd">
-                                        <rect key="frame" x="157" y="439" width="60" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type of Residence" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdM-je-SOE">
                                         <rect key="frame" x="67" y="256" width="240" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Residence Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hkc-Pa-M9C">
                                         <rect key="frame" x="67" y="153" width="240" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xx-1k-MEO">
-                                        <rect key="frame" x="157" y="449" width="60" height="62"/>
+                                        <rect key="frame" x="-4" y="438" width="379" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="sendLocationPressed:" destination="Zjy-G5-75s" eventType="touchUpInside" id="C6c-kb-YjY"/>
                                         </connections>
@@ -260,6 +260,8 @@
                         <outlet property="addResidenceLabel" destination="QNW-Vx-ebo" id="3Gj-JV-kXN"/>
                         <outlet property="blurView" destination="163-Iu-zsx" id="9vT-Ey-0d1"/>
                         <outlet property="bottomBarView" destination="ojl-wJ-72E" id="ZE8-Sm-wTm"/>
+                        <outlet property="first" destination="FA9-Mp-7WV" id="kED-aK-bMs"/>
+                        <outlet property="fourth" destination="QEF-Gz-MEZ" id="cn0-vW-ChD"/>
                         <outlet property="mapView" destination="okr-Ag-pnr" id="CoT-Fb-4yI"/>
                         <outlet property="plusSign" destination="QdP-Fj-9ay" id="clj-T7-0gb"/>
                         <outlet property="plusSignButton" destination="Ts6-7l-wFI" id="9DJ-U0-jh7"/>
@@ -267,6 +269,9 @@
                         <outlet property="residenceCapacity" destination="Xq2-jM-1kb" id="5cE-z0-dpC"/>
                         <outlet property="residenceName" destination="hkc-Pa-M9C" id="rpu-V9-Siw"/>
                         <outlet property="residenceType" destination="JdM-je-SOE" id="28R-uA-gc6"/>
+                        <outlet property="second" destination="gQp-dn-ZPz" id="btn-ar-INC"/>
+                        <outlet property="submitButton" destination="9xx-1k-MEO" id="qMw-gL-LQA"/>
+                        <outlet property="third" destination="5KO-2B-ebl" id="EM1-nu-aTf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kne-eG-g3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -277,7 +282,6 @@
     <resources>
         <image name="Arrow" width="40" height="30"/>
         <image name="Bottom Bar" width="350" height="100"/>
-        <image name="Green Arrow" width="35" height="51"/>
         <image name="Grey Oval" width="112" height="112"/>
         <image name="Line" width="262" height="3"/>
         <image name="Plus Sign" width="39" height="39"/>

@@ -31,18 +31,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func signInPressed(_ sender: Any) {
         
-       //logInUser(email: "user@gmail.com", password: "password")
-        if let email = email.text {
-            if let password = password.text {
-                if validText() {
-                    if up {
-                        createUser(email: email, password: password)
-                    } else {
-                        logInUser(email: email, password: password)
-                    }
-                }
-            }
-        }
+       logInUser(email: "user@gmail.com", password: "password")
+//        if let email = email.text {
+//            if let password = password.text {
+//                if validText() {
+//                    if up {
+//                        createUser(email: email, password: password)
+//                    } else {
+//                        logInUser(email: email, password: password)
+//                    }
+//                }
+//            }
+//        }
     }
     @IBAction func signUpSwitchPressed(_ sender: Any) {
         
@@ -131,6 +131,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             return false
         }
     }
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
