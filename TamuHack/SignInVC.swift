@@ -31,6 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func signInPressed(_ sender: Any) {
         
+       //logInUser(email: "user@gmail.com", password: "password")
         if let email = email.text {
             if let password = password.text {
                 if validText() {
@@ -41,7 +42,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     }
                 }
             }
-        }   
+        }
     }
     @IBAction func signUpSwitchPressed(_ sender: Any) {
         
@@ -82,8 +83,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.upText.alpha = 0
         }
         
-        
     }
+    
     func logInUser(email: String, password: String) {
         
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
@@ -93,15 +94,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
             } else {
                 print("Sign in failed!")
             }
+            
         }
+        
         
     }
     
     func createUser(email: String, password: String) {
         
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if error != nil {
+            if authResult != nil && error == nil {
                 print("User created successfully!")
+                self.performSegue(withIdentifier: "signInSegue", sender: self)
             } else {
                 print("Error creating user!")
             }
@@ -130,6 +134,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

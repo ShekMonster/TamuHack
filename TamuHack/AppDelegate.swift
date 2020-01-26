@@ -9,15 +9,21 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseFunctions
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let locationManager = CLLocationManager()
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        locationManager.requestAlwaysAuthorization()
+        
+        
         return true
     }
 
@@ -34,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
 
     // MARK: - Core Data stack
 
@@ -80,5 +87,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+//    func testpush() {
+//        Functions.functions().httpsCallable("pushTest").call(["text": "stringy"]) { (result, err) in
+//            print(result)
+//        }
+//    }
 }
 

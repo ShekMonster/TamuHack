@@ -9,5 +9,6 @@ target 'TamuHack' do
 
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod 'Firebase/Functions'
 
 end
