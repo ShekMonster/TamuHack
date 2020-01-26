@@ -42,8 +42,22 @@ public class FireDBAccess {
                     "longitude": location.coordinate.longitude,
                     "email": user.email!,
                     "uid": user.uid] as [String: Any]
+        let username = user.displayName
+        let userDict = ["name": username,
+                        "shelterName": name,
+                        "capacity": capacity] as [String: Any]
 
         ref.child("Shelters").childByAutoId().setValue(dataDict)
+        ref.child("Users").child("\(user.uid)").childByAutoId().setValue(userDict)
+    }
+    
+    public func findShelter(uid: String) -> String {
+        for shelter in shelters {
+            if shelter.id == uid {
+                return ""
+            }
+        }
+        return ""
     }
 
     public func getShelters() -> [ShelterEntry] {
@@ -73,7 +87,7 @@ public class FireDBAccess {
 
                         let location = CLLocation(latitude: latitude, longitude: longitude)
                         let newShelter = ShelterEntry(name: name, type: type, location: location, email: email, capacity: capacity, id: uid)
-
+                        print(snap.key)
                         self.shelters.append(newShelter)
                     }
                 }

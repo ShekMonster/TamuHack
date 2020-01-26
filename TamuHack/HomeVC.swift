@@ -30,6 +30,7 @@ class HomeVC: UIViewController {
     @IBOutlet var second: UIImageView!
     @IBOutlet var first: UIImageView!
     @IBOutlet var fourth: UIImageView!
+    @IBOutlet var profileVIew: UIView!
     
     var ref: DatabaseReference!
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -97,8 +98,12 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func profileButtonPressed(_ sender: Any) {
+        
+        self.view.addSubview(profileVIew)
+        
     }
     
+
     func setLocation() {
         
         if( CLLocationManager.authorizationStatus() == .authorizedWhenInUse ||
@@ -262,6 +267,7 @@ class HomeVC: UIViewController {
         self.residenceCapacity.text = ""
         
         self.profileButton.isEnabled = true
+        self.profileButton.isHidden = false
         
     }
     
@@ -277,6 +283,7 @@ class HomeVC: UIViewController {
         self.addResidenceLabel.alpha = 1
         
         self.profileButton.isEnabled = true
+        self.profileButton.isHidden = false
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -286,6 +293,4 @@ class HomeVC: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-
-    
 }
